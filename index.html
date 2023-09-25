@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies-Listing-using-Bootstrap5</title>
     <!-- Bootstrap 5.3.2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
     <link href="./assets/css/index.css" rel="stylesheet">
 </head>
@@ -14,49 +15,107 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark body-tertiary">
+        <nav class="navbar navbar-expand-lg text-bg-secondary">
             <div class="container-fluid">
-                <a class="navbar-brand ms-5 text-light" href="#">Movieslist</a>
+                <a class="navbar-brand ms-5" href="#">Movies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="fav.html">My Favourites</a>
+                            <a class="nav-link" href="#">Love</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Adventure</a>
                         </li>
                     </ul>
-                    <form class="d-flex ms-5" role="search">
+                    <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- card -->
+    <!-- carousel -->
     <main>
-        <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/Shershaah.jpg" class="d-block w-100" alt="shershaah">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Shershaah</h5>
+                        <p>Vikram Batra, a young man, dreams of becoming a soldier and falls in love with Dimple. Soon
+                            after his training, he climbs the military ranks and contributes to India's victory in the
+                            Kargil war.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/Vikram.jpg" class="d-block w-100" alt="vtv">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vikram</h5>
+                        <p>A special agent investigates a murder committed by a masked group of serial killers. However,
+                            a tangled maze of clues soon leads him to the drug kingpin of Chennai.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/Thalapathi.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Thalapathi</h5>
+                        <p>Surya, a courageous man who gets raised in the slums, fights for the rights of the poor.
+                            However, he becomes friends with Deva, who hires him as his commander and changes his life
+                            completely.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- card -->
+        <div class="container-md">
             <section class="love">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Love Movies</h1>
-                    <div class="card p-1 me-3 " style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt0464071"><img src="./assets/images/Sillunu oru kadhal.jpg"
                                 class="card-img-top" alt="Sillunu oru kadhal"></a>
                         <div class="card-body text-bg-dark">
                             <h5 class="card-title text-primary">Sillunu Oru Kadhal</h5>
-                            <p class="card-text">Gowtham and Kundhavi marry, then she finds a diary from his time at college, five years earlier. She thinks he would rather be married to Aishwarya, his college sweetheart, so she makes arrangements for them to meet again.</p>
+                            <p class="card-text">Gowtham and Kundhavi marry, then she finds a diary from his time at
+                                college, five years earlier. She thinks he would rather be married to Aishwarya, his
+                                college sweetheart, so she makes arrangements for them to meet again.</p>
                             <a href="https://www.imdb.com/title/tt0464071" class="btn btn-primary">Watch Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3" style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt1609168/"><img src="./assets/images/vtv.jpg"
-                                class="card-img-top" alt="Vikram"></a>
+                                class="card-img-top" alt="Vtv"></a>
                         <div class="card-body text-bg-dark">
                             <h5 class="card-title text-primary">Vinnaithaandi Varuvaayaa</h5>
                             <p class="card-text">A Hindu assistant director, Karthik, falls in love with Jessie, a
@@ -67,7 +126,7 @@
                             <a href="https://www.imdb.com/title/tt1609168/" class="btn btn-primary">Watch Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3" style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt0242256/"><img src="./assets/images/alaipayuthey.jpg"
                                 class="card-img-top" alt="alaipayuthey"></a>
                         <div class="card-body text-bg-dark">
@@ -85,7 +144,7 @@
             <section class="Action">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Action Movies</h1>
-                    <div class="card p-1 me-3 " style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt9179430/?ref_=fn_al_tt_1"><img
                                 src="./assets/images/Vikram.jpg" class="card-img-top" alt="Vikram"></a>
                         <div class="card-body text-bg-dark">
@@ -94,10 +153,11 @@
                                 serial killers. However, a tangled maze of clues soon leads him to the drug kingpin of
                                 Chennai.</p>
                             <a href="https://www.imdb.com/title/tt9179430/?ref_=fn_al_tt_1"
-                                class="btn btn-primary">Watch Now</a>
+                                class="btn btn-primary">Watch
+                                Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3" style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt8291224/"><img src="./assets/images/URI.webp"
                                 class="card-img-top" alt="URI"></a>
                         <div class="card-body text-bg-dark">
@@ -109,7 +169,7 @@
                             <a href="https://www.imdb.com/title/tt8291224/" class="btn btn-primary">Watch Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3" style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt7430722/"><img src="./assets/images/war.jpeg"
                                 class="card-img-top" alt="war"></a>
                         <div class="card-body text-bg-dark">
@@ -126,32 +186,52 @@
             <section class="Adventure">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Adventure movies</h1>
-                    <div class="card p-1 me-3 " style="width: 18rem;">
-                        <a href="https://www.imdb.com/title/tt7975244/"><img
-                                src="./assets/images/Jumanji 2.jpg" class="card-img-top" alt="Jumanji 2"></a>
+                    <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
+                        <a href="https://www.imdb.com/title/tt7975244/"><img src="./assets/images/Jumanji 2.jpg"
+                                class="card-img-top" alt="Jumanji 2"></a>
                         <div class="card-body text-bg-dark">
                             <h5 class="card-title text-primary">Jumanji 2</h5>
-                            <p class="card-text">When Spencer goes back into the fantastical world of Jumanji, pals Martha, Fridge and Bethany re-enter the game to bring him home. But the game is now broken -- and fighting back. Everything the friends know about Jumanji is about to change, as they soon discover there's more obstacles and more danger to overcome.</p>
-                            <a href="https://www.imdb.com/title/tt7975244/"
-                                class="btn btn-primary">Watch Now</a>
+                            <p class="card-text">When Spencer goes back into the fantastical world of Jumanji, pals
+                                Martha,
+                                Fridge and Bethany re-enter the game to bring him home. But the game is now broken --
+                                and
+                                fighting back. Everything the friends know about Jumanji is about to change, as they
+                                soon
+                                discover there's more obstacles and more danger to overcome.</p>
+                            <a href="https://www.imdb.com/title/tt7975244/" class="btn btn-primary">Watch Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3" style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt4154796/"><img src="./assets/images/Avengers End Game.jpg"
                                 class="card-img-top" alt="Avengers End Game"></a>
                         <div class="card-body text-bg-dark">
                             <h5 class="card-title text-primary">Avengers End Game</h5>
-                            <p class="card-text">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.
+                            <p class="card-text">Adrift in space with no food or water, Tony Stark sends a message to
+                                Pepper
+                                Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor,
+                                Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back
+                                their
+                                vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the
+                                planet and the universe.
                             </p>
                             <a href="https://www.imdb.com/title/tt4154796/" class="btn btn-primary">Watch Now</a>
                         </div>
                     </div>
-                    <div class="card p-1 me-3 " style="width: 18rem;">
+                    <div class="card p-1 me-3 mb-3" style="width: 18rem;">
                         <a href="https://www.imdb.com/title/tt0363771/"><img src="./assets/images/Narnia.jfif"
                                 class="card-img-top" alt="Narnia"></a>
                         <div class="card-body text-bg-dark">
                             <h5 class="card-title text-primary">The Chronicles of Narnia</h5>
-                            <p class="card-text">During the World War II bombings of London, four English siblings are sent to a country house where they will be safe. One day Lucy (Georgie Henley) finds a wardrobe that transports her to a magical world called Narnia. After coming back, she soon returns to Narnia with her brothers, Peter (William Moseley) and Edmund (Skandar Keynes), and her sister, Susan (Anna Popplewell). There they join the magical lion, Aslan (Liam Neeson), in the fight against the evil White Witch, Jadis (Tilda Swinton)
+                            <p class="card-text">During the World War II bombings of London, four English siblings are
+                                sent
+                                to a country house where they will be safe. One day Lucy (Georgie Henley) finds a
+                                wardrobe
+                                that transports her to a magical world called Narnia. After coming back, she soon
+                                returns to
+                                Narnia with her brothers, Peter (William Moseley) and Edmund (Skandar Keynes), and her
+                                sister, Susan (Anna Popplewell). There they join the magical lion, Aslan (Liam Neeson),
+                                in
+                                the fight against the evil White Witch, Jadis (Tilda Swinton)
                             </p>
                             <a href="https://www.imdb.com/title/tt0363771/" class="btn btn-primary">Watch Now</a>
                         </div>
@@ -159,8 +239,13 @@
             </section>
         </div>
     </main>
+    <footer>
+        <p class="text-center">Copyright &copy-2023-All Rights Reserved</p>
+    </footer>
     <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
