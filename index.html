@@ -15,9 +15,9 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg text-bg-secondary">
+        <nav class="navbar navbar-expand-lg text-bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="#">Movies</a>
+                <a class="navbar-brand ms-5 text-light" href="#">Movies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,21 +26,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Love</a>
+                            <a class="nav-link text-light" href="#love">Love</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Action</a>
+                            <a class="nav-link text-light" href="#Action">Action</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Adventure</a>
+                            <a class="nav-link text-light" href="#Adventure">Adventure</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-light" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -98,8 +98,8 @@
             </button>
         </div>
         <!-- card -->
-        <div class="container-md">
-            <section class="love">
+        <div class="container">
+            <section id="love">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Love Movies</h1>
                     <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <section class="Action">
+            <section id="Action">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Action Movies</h1>
                     <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
             </section>
-            <section class="Adventure">
+            <section id="Adventure">
                 <div class="row p-5 justify-content-center bg-secondary">
                     <h1 class="text-center mb-5">Adventure movies</h1>
                     <div class="card p-1 me-3 mb-3 " style="width: 18rem;">
